@@ -31,6 +31,7 @@
   },
   "repository": "https://github.com/walkerJung/bf-common-eslint",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   }
 }
