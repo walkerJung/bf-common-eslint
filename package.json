@@ -1,0 +1,36 @@
+{
+  "name": "@walkerjung/eslint-plugin-bf-common-eslint",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "nanobundle": "^1.5.0"
+  },
+  "exports": {
+    ".": {
+      "source": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "import": "./lib/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "nanobundle build --root-dir=./",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": "https://github.com/walkerJung/bf-common-eslint",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
